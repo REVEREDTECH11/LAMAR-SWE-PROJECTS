@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MY PROJECTS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+</head>
+<body>
+
+  <h1>MY PROJECTS</h1>
+   <select name="PROJECTS" id="PROJECTS">
+     <option value="https://github.com/GregLamar/LAMAR_SWE">GITHUB</option>
+   </select>
+  <button onclick="goToPlatform()" target="blank">Go</button>
+  <script>
+    function goToPlatform() {
+      var website = document.getElementById("PROJECTS");
+      var selectedPlatform = website.value;
+      window.open(selectedPlatform, '_blank');
+    }
+  </script>
+
+  <h2>NAVIGATE</h2>
+  <select name="navigate" id="navigate">
+    <option value="main.html">HOME</option>
+    <option value="MYLINKS.html">MY LINKS</option>
+    <option value="PROJECTS.html">MY PROJECTS</option>
+    <option value="KNOWLEDGE.html">MY KNOWLEDGE</option>
+    <option value="CONTACT.html">CONTACT</option>
+  </select>
+  <button onclick="goToPlatform()" target="blank">GO</button>
+
+  <script>
+    function goToPlatform() {
+      var selectedPlatform = document.getElementById("navigate").value;
+      window.open(selectedPlatform, '_blank');
+    }
+  </script>
+
+
+
+</body>
+
+<footer>
+
+</footer>
+</html>
