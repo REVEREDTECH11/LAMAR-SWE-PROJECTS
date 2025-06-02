@@ -4,31 +4,35 @@
   <title>MY PROJECTS</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/projects.css">
   <meta name="description" content="">
 </head>
 <body>
 
   <h1>MY PROJECTS</h1>
-   <select name="PROJECTS" id="PROJECTS">
-     <option value="https://github.com/GregLamar/LAMAR_SWE">GITHUB</option>
-   </select>
-  <button onclick="goToPlatform()" target="blank">Go</button>
-  <script>
-    function goToPlatform() {
-      var website = document.getElementById("PROJECTS");
-      var selectedPlatform = website.value;
-      window.open(selectedPlatform, '_blank');
-    }
-  </script>
+   <button>
+    <a href = "https://github.com/REVEREDTECH11/LAMAR-SWE-PROJECTS/tree/WEB-PROJECTS">GITHUB</a>
+   </button>
+
+  <h2>PROJECTS</h2>
+  <ul>
+    <li>WEB PROJECTS</li>
+    <li>ANDROID PROJECTS</li>
+    <li>MOBILE PROJECTS</li>
+    <li>WEB DESIGN PROJECTS</li>
+    <li>HOME SERVER</li>
+  </ul>
+
+
 
   <h2>NAVIGATE</h2>
   <select name="navigate" id="navigate">
-    <option value="main.html">HOME</option>
+    <option value="PROJECTS.html">HOME</option>
     <option value="MYLINKS.html">MY LINKS</option>
-    <option value="PROJECTS.html">MY PROJECTS</option>
+    <option value="HOME.html">MY PROJECTS</option>
     <option value="KNOWLEDGE.html">MY KNOWLEDGE</option>
     <option value="CONTACT.html">CONTACT</option>
+    <option value="SERVICES.html">SERVICES</option>
   </select>
   <button onclick="goToPlatform()" target="blank">GO</button>
 
